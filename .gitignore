@@ -19,3 +19,15 @@
 *.exe
 *.out
 *.app
+
+# Directories
+Debug
+LoreiGui/Debug
+LoreiLib/Debug
+LoreiTest/Debug
+
+# Visual Studio Stuff
+*.sdf
+*.opensdf
+*.vcxproj.user
+Lorei_2.0.v12.suo
