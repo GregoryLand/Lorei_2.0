@@ -138,9 +138,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LoreiLib.h" />
+    <ClInclude Include="Src\ApiProvider\ApiProvider.h" />
+    <ClInclude Include="Src\Processors\ScriptProcessor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LoreiLib.cpp" />
+    <ClCompile Include="Src\ApiProvider\ApiProvider.cpp" />
+    <ClCompile Include="Src\Processors\ScriptProcessor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\ApiProviders">
+      <UniqueIdentifier>{cd298e7f-2e2e-4406-bdc3-bac83a2d5d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ApiProviders">
+      <UniqueIdentifier>{8c53eb61-004e-4868-a670-98a63bb98c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Processors">
+      <UniqueIdentifier>{07997080-3af3-4e15-b525-306717ec97c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Processors">
+      <UniqueIdentifier>{a4a67b48-c860-4a99-8f6d-f1e7d3b81b29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -21,10 +33,22 @@
     <ClInclude Include="LoreiLib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Src\ApiProvider\ApiProvider.h">
+      <Filter>Header Files\ApiProviders</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Processors\ScriptProcessor.h">
+      <Filter>Header Files\Processors</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LoreiLib.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ApiProvider\ApiProvider.cpp">
+      <Filter>Source Files\ApiProviders</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Processors\ScriptProcessor.cpp">
+      <Filter>Source Files\Processors</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
