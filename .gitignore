@@ -20,7 +20,7 @@
 *.out
 *.app
 
-# Directories
+# Old Build Directories
 Debug
 LoreiGui/Win32
 LoreiLib/Win32
@@ -28,6 +28,12 @@ LoreiTest/Win32
 LoreiGui/x64
 LoreiLib/x64
 LoreiTest/X64
+
+# New Build Directorys
+Build/
+LoreiGUI/Build
+LOreiLib/Build
+LoreiTest/Build
 
 # Visual Studio Stuff
 *.sdf
