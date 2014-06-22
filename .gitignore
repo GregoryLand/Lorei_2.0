@@ -22,9 +22,12 @@
 
 # Directories
 Debug
-LoreiGui/Debug
-LoreiLib/Debug
-LoreiTest/Debug
+LoreiGui/Win32
+LoreiLib/Win32
+LoreiTest/Win32
+LoreiGui/x64
+LoreiLib/x64
+LoreiTest/X64
 
 # Visual Studio Stuff
 *.sdf
