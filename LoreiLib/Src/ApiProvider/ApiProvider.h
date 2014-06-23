@@ -6,10 +6,6 @@ namespace Lorei
 	{
 		class ApiProvider
 		{
-			public:
-				ApiProvider();
-			public:
-				~ApiProvider();
 		};
 	}
 }

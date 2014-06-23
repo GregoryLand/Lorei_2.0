@@ -1,3 +1,4 @@
+#pragma once
 #ifndef LOREI_TEST
 #define LOREI_TEST
 
