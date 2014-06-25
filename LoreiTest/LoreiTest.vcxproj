@@ -173,8 +173,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BoostTest.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Src\BoostTest.cpp" />
+    <ClCompile Include="Src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

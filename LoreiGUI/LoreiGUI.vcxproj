@@ -191,7 +191,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="Src\test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\LoreiTest\test.h">

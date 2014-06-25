@@ -30,25 +30,25 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LoreiLib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Src\ApiProvider\ApiProvider.h">
       <Filter>Header Files\ApiProviders</Filter>
     </ClInclude>
     <ClInclude Include="Src\Processors\ScriptProcessor.h">
       <Filter>Header Files\Processors</Filter>
     </ClInclude>
+    <ClInclude Include="Src\LoreiLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LoreiLib.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Src\ApiProvider\ApiProvider.cpp">
       <Filter>Source Files\ApiProviders</Filter>
     </ClCompile>
     <ClCompile Include="Src\Processors\ScriptProcessor.cpp">
       <Filter>Source Files\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\LoreiLib.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

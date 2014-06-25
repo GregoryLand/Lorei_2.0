@@ -16,10 +16,10 @@ cmake_minimum_required(VERSION 3.0)
 
 # Setup the Header and Source Variables
 file( GLOB LOREI_TEST_HEADERS
-        "*.h" )
+        "Src/*.h" )
         
 file( GLOB LOREI_TEST_SOURCES 
-        "*.cpp" ) 
+        "Src/*.cpp" ) 
         
 # Grab Boost
 set( Boost_USE_STATIC_LIBS ON )
