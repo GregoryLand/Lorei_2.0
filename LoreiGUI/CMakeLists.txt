@@ -13,6 +13,8 @@
 ################################################################################################################
 # 1) Basics
 cmake_minimum_required(VERSION 3.0)
+set( EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin )
+set( LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib )
 
 # Setup the Header and Source Variables
 file( GLOB LOREI_GUI_HEADERS
@@ -27,7 +29,11 @@ set( CMAKE_AUTOMOC ON )
 find_package( Qt5Widgets )
 
 # Create the Exe
-add_executable( LoreiGUI test.cpp )
+# include( ${PREFIX}/Lib/Lorei-LoreiLib.cmake )
+add_executable( LoreiGUI Src/test.cpp )
+
+# Link in the main library
+target_link_libraries( LoreiGUI LoreiLib )
 
 # Link in QT 5
 qt5_use_modules( LoreiGUI Widgets )

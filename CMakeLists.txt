@@ -24,7 +24,25 @@ set_property( GLOBAL PROPERTY USE_FOLDERS ON )
 # Compiler Flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-# Setup the subprojects
-add_subdirectory( LoreiLib )
+# Setup the subproject LoreiLib
+# Setup the Header and Source Variables
+file( GLOB LOREI_LIB_HEADERS
+        "LoreiLib/Src/*.h" ,
+        "LoreiLib/Src/ApiProvider/*.h" ,
+        "LoreiLib/Src/Processors/*.h" ) 
+        
+file( GLOB LOREI_LIB_SOURCES 
+        "LoreiLib/Src/*.cpp" , 
+        "LoreiLib/Src/ApiProvider/*.cpp" , 
+        "LoreiLib/Src/Processors/*.cpp" ) 
+        
+# Create the Lib
+add_library( LoreiLib STATIC ${LOREI_LIB_HEADERS} ${LOREI_LIB_SOURCES} )
+
+# Setup subproject LoreiTest our boost unit test framework
 add_subdirectory( LoreiTest )
+add_dependencies( LoreiTest LoreiLib )
+
+# Setup our Qt based GUI
 add_subdirectory( LoreiGUI )
+add_dependencies( LoreiGUI LoreiLib )

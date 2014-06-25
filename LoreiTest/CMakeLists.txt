@@ -13,6 +13,8 @@
 ################################################################################################################
 # 1) Basics
 cmake_minimum_required(VERSION 3.0)
+set( EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin )
+set( LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib )
 
 # Setup the Header and Source Variables
 file( GLOB LOREI_TEST_HEADERS
@@ -30,5 +32,11 @@ find_package( Boost 1.55 REQUIRED unit_test_framework)
 include_directories( ${Boost_INCLUDE_DIRS} )
 
 # Create the Lib
-add_executable( LoreiTest main.cpp ${LOREI_TEST_SOURCES} )
+# include( ${PREFIX}/Lib/Lorei-LoreiLib.cmake )
+add_executable( LoreiTest Src/main.cpp ${LOREI_TEST_SOURCES} )
+
+# Link In Boost
 target_link_libraries( LoreiTest ${Boost_LIBRARIES} )
+
+# Link in the main library
+target_link_libraries( LoreiTest LoreiLib )

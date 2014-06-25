@@ -43,3 +43,6 @@ Lorei_2.0.v12.suo
 
 #Nuget Stuff
 packages/
+
+# Kde develop
+*.kdev4
