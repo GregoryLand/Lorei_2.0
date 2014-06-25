@@ -68,26 +68,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
-    <OutDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>Build\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Build\Windows\$(Platform)\$(Configuration)\</IntDir>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
-    <IntDir>Build\$(Platform)\$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Build\Windows\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
-    <OutDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>Build\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Build\Windows\$(Platform)\$(Configuration)\</IntDir>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
-    <IntDir>Build\$(Platform)\$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Build\Windows\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
