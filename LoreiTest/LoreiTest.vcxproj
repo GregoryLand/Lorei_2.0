@@ -99,7 +99,7 @@
       <Command>"$(TargetDir)\$(TargetName).exe" --result_code=no --report_level=no</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Run Boost</Message>
+      <Message>Run Boost Unit Tests</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -117,7 +117,7 @@
       <Command>"$(TargetDir)\$(TargetName).exe" --result_code=no --report_level=no</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Run Boost</Message>
+      <Message>Run Boost Unit Tests</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -139,7 +139,7 @@
       <Command>"$(TargetDir)\$(TargetName).exe" --result_code=no --report_level=no</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Run Boost</Message>
+      <Message>Run Boost Unit Tests</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -161,7 +161,7 @@
       <Command>"$(TargetDir)\$(TargetName).exe" --result_code=no --report_level=no</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Run Boost</Message>
+      <Message>Run Boost Unit Tests</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
