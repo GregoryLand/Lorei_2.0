@@ -1,3 +1,3 @@
 #include "LoreiLib.h"
 
-std::string Lorei::test() { return "Hello World"; }
+std::string Lorei::ProgramName() { return "Language Operated Request and Execution Interface"; }

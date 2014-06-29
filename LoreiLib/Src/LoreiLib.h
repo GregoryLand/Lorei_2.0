@@ -7,5 +7,5 @@
 
 namespace Lorei
 {
-	std::string test();
+	std::string ProgramName();
 }

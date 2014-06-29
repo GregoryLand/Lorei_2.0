@@ -16,7 +16,7 @@ BOOST_AUTO_TEST_CASE(basic_boost_test)
 
 BOOST_AUTO_TEST_CASE( Lorei_Lib_Link )
 {
-	BOOST_CHECK_EQUAL( Lorei::test(), "Hello World" );
+	BOOST_CHECK_EQUAL( Lorei::ProgramName(), "Language Operated Request and Execution Interface" );
 }
 //KeepAtEndOfFile//////////////////////////////////////////////////////////////////////////////////////////////////
 BOOST_AUTO_TEST_SUITE_END();
