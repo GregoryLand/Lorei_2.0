@@ -1,6 +1,7 @@
 
 #include "test.h"
 // QT Stuff
+#include "LoreiLib.h"
 #include <QtWidgets>
 #include <QtGui>
 #include <qfont.h>
@@ -51,7 +52,7 @@ int main( int argc, char** argv )
 
 	// Add the layouts to the window
 	mainWindow.setCentralWidget( &topLevelWidget );
-	mainWindow.setWindowTitle( "Language Operated Request and Execution Interface" );
+	mainWindow.setWindowTitle( QString::fromStdString(Lorei::ProgramName()) );
 	mainWindow.setMinimumWidth( 490 );
 	mainWindow.setMinimumHeight( 100 );
 	
