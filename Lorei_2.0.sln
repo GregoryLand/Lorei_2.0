@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoreiGUI", "LoreiGUI\LoreiGUI.vcxproj", "{125E67F1-5440-4FE9-9F0D-7345B981E09D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{972A9B34-C1EE-4306-B9C6-671B9EF46314} = {972A9B34-C1EE-4306-B9C6-671B9EF46314}
+		{E344C65F-9EE4-46CF-8521-85022F7B4657} = {E344C65F-9EE4-46CF-8521-85022F7B4657}
+	EndProjectSection
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoreiLib", "LoreiLib\LoreiLib.vcxproj", "{972A9B34-C1EE-4306-B9C6-671B9EF46314}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoreiTest", "LoreiTest\LoreiTest.vcxproj", "{E344C65F-9EE4-46CF-8521-85022F7B4657}"
 	ProjectSection(ProjectDependencies) = postProject
 		{972A9B34-C1EE-4306-B9C6-671B9EF46314} = {972A9B34-C1EE-4306-B9C6-671B9EF46314}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoreiGUI", "LoreiGUI\LoreiGUI.vcxproj", "{125E67F1-5440-4FE9-9F0D-7345B981E09D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{972A9B34-C1EE-4306-B9C6-671B9EF46314} = {972A9B34-C1EE-4306-B9C6-671B9EF46314}
-		{E344C65F-9EE4-46CF-8521-85022F7B4657} = {E344C65F-9EE4-46CF-8521-85022F7B4657}
 	EndProjectSection
 EndProject
 Global
@@ -24,6 +24,14 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Debug|Win32.Build.0 = Debug|Win32
+		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Debug|x64.ActiveCfg = Debug|x64
+		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Debug|x64.Build.0 = Debug|x64
+		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Release|Win32.ActiveCfg = Release|Win32
+		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Release|Win32.Build.0 = Release|Win32
+		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Release|x64.ActiveCfg = Release|x64
+		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Release|x64.Build.0 = Release|x64
 		{972A9B34-C1EE-4306-B9C6-671B9EF46314}.Debug|Win32.ActiveCfg = Debug|Win32
 		{972A9B34-C1EE-4306-B9C6-671B9EF46314}.Debug|Win32.Build.0 = Debug|Win32
 		{972A9B34-C1EE-4306-B9C6-671B9EF46314}.Debug|x64.ActiveCfg = Debug|x64
@@ -40,14 +48,6 @@ Global
 		{E344C65F-9EE4-46CF-8521-85022F7B4657}.Release|Win32.Build.0 = Release|Win32
 		{E344C65F-9EE4-46CF-8521-85022F7B4657}.Release|x64.ActiveCfg = Release|x64
 		{E344C65F-9EE4-46CF-8521-85022F7B4657}.Release|x64.Build.0 = Release|x64
-		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Debug|Win32.ActiveCfg = Debug|Win32
-		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Debug|Win32.Build.0 = Debug|Win32
-		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Debug|x64.ActiveCfg = Debug|x64
-		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Debug|x64.Build.0 = Debug|x64
-		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Release|Win32.ActiveCfg = Release|Win32
-		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Release|Win32.Build.0 = Release|Win32
-		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Release|x64.ActiveCfg = Release|x64
-		{125E67F1-5440-4FE9-9F0D-7345B981E09D}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
