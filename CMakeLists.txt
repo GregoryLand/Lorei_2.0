@@ -38,6 +38,7 @@ file( GLOB LOREI_LIB_SOURCES
         
 # Create the Lib
 add_library( LoreiLib STATIC ${LOREI_LIB_HEADERS} ${LOREI_LIB_SOURCES} )
+add_subdirectory( LoreiLib )
 
 # Setup subproject LoreiTest our boost unit test framework
 add_subdirectory( LoreiTest )

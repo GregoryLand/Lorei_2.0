@@ -28,6 +28,9 @@ set( CMAKE_INCLUDE_CURRENT_DIR ON )
 set( CMAKE_AUTOMOC ON )
 find_package( Qt5Widgets )
 
+# Get Lorei Lib Headers
+include_directories( ../LoreiLib/Src/ )
+
 # Create the Exe
 # include( ${PREFIX}/Lib/Lorei-LoreiLib.cmake )
 add_executable( LoreiGUI Src/test.cpp )

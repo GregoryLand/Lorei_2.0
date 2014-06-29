@@ -23,6 +23,7 @@ file( GLOB LOREI_TEST_HEADERS
 file( GLOB LOREI_TEST_SOURCES 
         "Src/*.cpp" ) 
         
+
 # Grab Boost
 set( Boost_USE_STATIC_LIBS ON )
 set( Boost_USE_MULTITHREADED ON )
@@ -30,6 +31,9 @@ set( Boost_USE_STATIC_RUNTIME OFF )
 set( Boost_DEBUG ON )
 find_package( Boost 1.55 REQUIRED unit_test_framework)
 include_directories( ${Boost_INCLUDE_DIRS} )
+
+# Get Lorei Lib Headers
+include_directories( ../LoreiLib/Src/ )
 
 # Create the Lib
 # include( ${PREFIX}/Lib/Lorei-LoreiLib.cmake )
